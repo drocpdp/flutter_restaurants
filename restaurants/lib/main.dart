@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurants/widgets/search_section.dart';
+import 'package:restaurants/widgets/search_results_list_view.dart';
 
 void main() => runApp(const Restaurants());
 
@@ -23,6 +24,7 @@ class RestaurantsState extends State<Restaurants> {
           children: [
             SearchSection(),
             // next sections can go here
+            SearchResultsListView(),
           ],
         ),
       ),
