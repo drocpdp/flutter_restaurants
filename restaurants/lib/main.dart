@@ -16,10 +16,16 @@ class RestaurantsState extends State<Restaurants> {
     return MaterialApp(
       title: 'Restaurants',
       home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Restaurants'),
-          ),
-          body: const SearchSection()),
+        appBar: AppBar(
+          title: const Text('Restaurants'),
+        ),
+        body: const Column(
+          children: [
+            SearchSection(),
+            // next sections can go here
+          ],
+        ),
+      ),
     );
   }
 }
