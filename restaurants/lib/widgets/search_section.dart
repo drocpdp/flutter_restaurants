@@ -36,7 +36,7 @@ class SearchSectionState extends State<SearchSection> {
             children: [
               Container(
                 constraints: BoxConstraints(minWidth: 100),
-                child: TextField(
+                child: const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Search Term',
@@ -46,8 +46,8 @@ class SearchSectionState extends State<SearchSection> {
             ],
           ),
         ),
-        SizedBox(width: 10),
-        Column(
+        const SizedBox(width: 10),
+        const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
@@ -57,8 +57,8 @@ class SearchSectionState extends State<SearchSection> {
             ),
           ],
         ),
-        SizedBox(width: 10),
-        Column(
+        const SizedBox(width: 10),
+        const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
